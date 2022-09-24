@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>
+    WWEE
+    </title>
+    <style>
+body{font-family: 'dubai';font-size: 18px;}
+*{box-sizing: border-box;margin: 0;padding: 0;}
+nav{background-color: #e74c3c;padding: 10px 20px;}
+nav ul{list-style: none;display: flex;	justify-content: space-around;align-items: center;}
+nav ul li{
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-align: center;
+	transition: .3s ease-in-out all;
+}
+nav ul li:hover{color: #e67e22;}
+.container{width: 1200px;margin: 20px 112px;}
+.container .main-section{
+	background-color: #c0392b;
+	padding: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.container .main-section h2{color: #000;}
+.container .main-section p{
+	color: #fff;
+	font-family: 'verdana';
+	font-size: 16px;
+}
+.main-div{overflow: hidden;position: relative;}
+.main-div .aside-section{
+	background-color: #bdc3c7;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 45px;
+	height: auto;
+	padding: 5px;
+}
+.aside-section .color-switcher{list-style: none;text-align: center;}
+.aside-section .color-switcher li{
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+.aside-section .color-switcher li:first-child{background-color:#c0392b; }
+.aside-section .color-switcher li:nth-child(2){background-color:#27ae60; }
+.aside-section .color-switcher li:nth-child(3){background-color:#2980b9; }
+.aside-section .color-switcher li:nth-child(4){background-color:#8e44ad; }
+.red nav{background-color: #e74c3c;padding: 10px 20px;}
+.green nav{background-color: #27ae60;padding: 10px 20px;}
+.blue nav{background-color: #2980b9;padding: 10px 20px;}
+.purple nav{background-color: #8e44ad;padding: 10px 20px;}
+.red .container .main-section{
+	background-color: #e74c3c;
+	padding: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.green .container .main-section{
+	background-color: #2ecc71;
+	padding: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.blue .container .main-section{
+	background-color: #3498db;
+	padding: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.purple .container .main-section{
+	background-color: #9b59b6;
+	padding: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+    </style>
+}    </head>
+    <body>
+    
+    <nav>
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+		<li>Portfolio</li>
+		<li>Call us</li>
+	</ul>
+</nav>
+<div class="main-div">
+<div class="container">
+	<div class="main-section">
+		<h2>First Section</h2>
+		<p>This is The First Section Part In This Page</p>
+	</div>
+	<div class="main-section">
+		<h2>Second Section</h2>
+		<p>This is The Second Section Part In This Page</p>
+	</div>
+	<div class="main-section">
+		<h2>Third Section</h2>
+		<p>This is The Third Section Part In This Page</p>
+	</div>
+	<div class="main-section">
+		<h2>Forth Section</h2>
+		<p>This is The Forth Section Part In This Page</p>
+	</div>
+	</div>
+	<div class="aside-section">
+		<ul class="color-switcher">
+			<li color-change = "red"></li>
+			<li color-change = "green"></li>
+			<li color-change = "blue"></li>
+			<li color-change = "purple"></li>
+		</ul>
+	</div>
+
+</div>
+    <script  src="Color.js"></script>
+    </body>
+
+</html>
+
